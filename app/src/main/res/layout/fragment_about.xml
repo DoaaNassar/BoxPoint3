@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/silverS"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.boxpoint.Fragment.AboutFragment"
+    tools:ignore="RtlCompat">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+
+
+
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="@string/about"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/boxArabic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ellipse12"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ellipse11"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ellipse10"
+
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/box_login" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/boxEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/box_login" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ellipse12"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="3dp"
+                    android:src="@drawable/ellipse11"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ellipse10"
+
+
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/point_login" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:src="@drawable/your_guide_login"
+
+                />
+        </LinearLayout>
+
+    <com.example.duaa.boxpoint.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/aboutApplication"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.example.duaa.boxpoint.view.FontTextViewRegular
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="هذا النص هو مثال لنص يمكن ان يستبدل في نفس المساحة لقد تم توليدهذا النص من مواد النص العربي حيث يمكنك ان تولد مثل هذا النص "
+        android:textColor="@color/white"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginTop="18dp"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_phone_black_24dp"
+            android:background="@drawable/background_button"
+            android:padding="10dp"
+            android:layout_marginEnd="10dp"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_share_black_24dp"
+            android:background="@drawable/background_button"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

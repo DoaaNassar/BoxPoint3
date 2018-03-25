@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle1"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.boxpoint.Activity.MainActivity"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/group121"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context="com.example.duaa.boxpoint.Activity.MainActivity"
+        tools:ignore="RtlCompat">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="100dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:visibility="gone"
+                android:id="@+id/boxArabic"
+
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse16"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse15"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse14"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+
+
+                    />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/box" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="left"
+                android:id="@+id/boxEnglish"
+
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/box" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse16"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse15"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="10dp"
+
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ellipse14"
+                    android:layout_gravity="bottom"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/points" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+
+                android:src="@drawable/your_guide"
+
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <com.example.duaa.boxpoint.view.FontButtonRegular
+                android:id="@+id/englishLang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/button_select_english"
+
+                android:text="English"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <com.example.duaa.boxpoint.view.FontButtonRegular
+
+                android:id="@+id/arabicLang"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/button_not_not_select_arabic"
+                android:paddingEnd="10dp"
+                android:text="عربي"
+                android:textColor="@color/white"
+
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/silverS"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:ignore="RtlCompat"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/circle"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_launcher_background"
+
+            />
+    </FrameLayout>
+
+
+    <com.example.duaa.boxpoint.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="معتصم محمد"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <com.example.duaa.boxpoint.view.FontTextViewRegular
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/ic_place_black_24dp"
+        android:gravity="center"
+        android:text="الأحمدي . الكويت"
+        android:textColor="@color/white"
+         />
+
+</LinearLayout>

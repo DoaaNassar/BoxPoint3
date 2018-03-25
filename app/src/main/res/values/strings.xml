@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">BoxPoint</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="contentOfComplaint">محتوى الشكوى</string>
+    <string name="send">إرسال</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutApplication">عن التطبيق</string>
+    <string name="userName">اسم المستخدم</string>
+    <string name="login">دخول</string>
+    <string name="forgetPassword">نسيت كلمة المرور ؟</string>
+    <string name="newUser">مستخدم جديد</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="newClient">تسجيل العملاء</string>
+    <string name="offerNow">العروض المتاحة</string>
+    <string name="firstName">الاسم الاول</string>
+    <string name="lastName">الاسم الاخير</string>
+    <string name="password">كلمة المرور</string>
+    <string name="clientImage">صورة العميل</string>
+    <string name="buy">شراء باقات</string>
+    <string name="numberPoint">عدد النقاط</string>
+    <string name="disCount">خصم</string>
+    <string name="price">السعر</string>
+    <string name="buyBuy">شراء</string>
+    <string name="editProfile">تعديل ملف المتجر</string>
+    <string name="home">الرئيسية</string>
+    <string name="fav">المفضلة</string>
+    <string name="editPersonalProfile">تعديل الملف الشخصي</string>
+    <string name="addComplaint">اضافة شكوى</string>
+    <string name="packageMe">باقاتي</string>
+    <string name="out">خروج</string>
+    <string name="about">عن التطبيق</string>
+    <string name="back">تراجع</string>
+    <string name="save">حفظ</string>
+    <string name="editProfileClient">تعديل ملف العميل</string>
+    <string name="notification">الاشعارات</string>
+    <string name="addUser">تسجيل عميل</string>
+    <string name="addShop">تسجيل متجر</string>
+    <string name="campanyname">اسم الشركة</string>
+    <string name="campanyImage">صورة المتجر</string>
+    <string name="numberPhone">رقم الهاتف</string>
+    <string name="addNew">تسجيل جديد</string>
+    <string name="restaurant">مطاعم</string>
+    <string name="coffee">كافيهات</string>
+    <string name="hotel">فنادق</string>
+    <string name="botec">بوتيكات</string>
+    <string name="hospital">عيادات</string>
+    <string name="editShopeProfile">تعديل بيانات متجر</string>
+    <string name="please_wait">الرجاء الانتظار</string>
+    <string name="usagePolicy">سياسة الاستخدام</string>
+    <string name="shop">المتاجر</string>
+    <string name="client">العملاء</string>
+    <string name="addressComplaint">عنوان الشكوى</string>
+    <string name="resultSearch">نتائج البحث</string>
+    <string name="changePassword">تغير كلمة المرور</string>
+    <string name="oldPassword">كلمة المرور القديمة</string>
+    <string name="newPassword">كلمة المرور الجديدة</string>
+    <string name="confirmPassword">تأكيد كلمة المرور</string>
+    <string name="change">تغير</string>
+    <string name="loading">تحميل</string>
+    <string name="returnLoading">إعادة المحاولة...</string>
+    <string name="noInternet">لايوجد اتصال بالانترنت</string>
+    <string name="discountCode">كود الخصم</string>
+    <string name="priceAfterDiscount">السعر بعد الخصم</string>
+    <string name="Logout">تسجيل خروج..</string>
+    <string name="addAll" />
+
+
+</resources>

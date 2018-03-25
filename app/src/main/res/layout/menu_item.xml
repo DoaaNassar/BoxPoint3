@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="40dp"
+    android:paddingBottom="5dp"
+    tools:ignore="RtlCompat">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_phone_black_24dp"
+    android:id="@+id/image"
+    android:layout_gravity="center"
+
+    />
+    <com.example.duaa.boxpoint.view.FontTextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/out"
+        android:layout_weight="1"
+        android:textSize="14.5sp"
+        android:layout_gravity="center"
+        android:id="@+id/name"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        />
+</LinearLayout>

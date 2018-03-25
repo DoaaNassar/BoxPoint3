@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFBF00</color>
+    <color name="colorPrimaryDark">#FFBF00</color>
+    <color name="colorAccent">#FFBF00</color>
+    <color name="Silver">#b7b7b7</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="silverS">#303030</color>
+    <color name="gold">#8b6107</color>
+    <color name="textColor">#E68F11</color>
+    <color name="silverNavigation">#303030</color>
+    <color name="background">#EEF1F8</color>
+    <color name="green">#11E626</color>
+
+
+
+
+
+</resources>

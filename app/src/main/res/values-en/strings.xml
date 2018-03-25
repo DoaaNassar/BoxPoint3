@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BoxPoint</string>
+    <string name="email">email</string>
+    <string name="contentOfComplaint">content complaint</string>
+    <string name="send">send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutApplication">about</string>
+    <string name="userName">new user</string>
+    <string name="login">Login</string>
+    <string name="forgetPassword">Are you forget password ?</string>
+    <string name="newUser">new user</string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="newClient">Login client</string>
+    <string name="offerNow">offer available</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="password">Password</string>
+    <string name="clientImage">photo</string>
+    <string name="buy">buy package</string>
+    <string name="numberPoint">count point</string>
+    <string name="disCount">discount</string>
+    <string name="price">price</string>
+    <string name="buyBuy">buy</string>
+    <string name="editProfile">edit client profile</string>
+    <string name="home">Main</string>
+    <string name="fav">Favourite</string>
+    <string name="editPersonalProfile">edit personal profile</string>
+    <string name="addComplaint">add complaint</string>
+    <string name="packageMe">my package</string>
+    <string name="out">Logout</string>
+    <string name="about">about</string>
+    <string name="back">back</string>
+    <string name="save">save</string>
+    <string name="editProfileClient">edit client profile</string>
+    <string name="notification">notification</string>
+    <string name="addUser">sign up client</string>
+    <string name="addShop">sign up shop</string>
+    <string name="campanyname">company name</string>
+    <string name="campanyImage">Image</string>
+    <string name="numberPhone">phone</string>
+    <string name="addNew">new user</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="coffee">coffees</string>
+    <string name="hotel">hotels</string>
+    <string name="botec">potecs</string>
+    <string name="hospital">عيادات</string>
+    <string name="editShopeProfile">Sign up shop</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="usagePolicy">Usage Policy</string>
+    <string name="shop">Shops</string>
+    <string name="client">Clients</string>
+    <string name="addressComplaint">Complaint address</string>
+    <string name="resultSearch">Result search</string>
+    <string name="changePassword">Change password</string>
+    <string name="oldPassword">Old password</string>
+    <string name="newPassword">New password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="change">change</string>
+    <string name="loading">Loading</string>
+    <string name="returnLoading">return loading...</string>
+    <string name="noInternet">No Internet</string>
+    <string name="discountCode">Discount code</string>
+    <string name="priceAfterDiscount">Price after discount</string>
+    <string name="Logout">Logout</string>
+    <string name="addAll" />
+
+
+</resources>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f1f0f0"
+    tools:context="com.example.duaa.boxpoint.Activity.OfferActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+
+
+
+
+
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/offerNow"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+
+                    />
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            tools:ignore="RtlCompat">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+
+                    android:text="مطعم بيتزا هت"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="end"
+                    android:text="dbn.95@hotmail.com"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+
+                    />
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:drawableEnd="@drawable/ic_place_black_24dp"
+                    android:drawablePadding="5dp"
+                    android:text="الكويت"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:background="@drawable/background_icon"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:background="@drawable/background_icon"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_icon"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_phone_black_24dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/imageOffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/white"
+                    />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <com.example.duaa.boxpoint.view.FontTextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/offerNow"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/offerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <com.example.duaa.boxpoint.view.FontButtonRegular
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_button2"
+            android:text="@string/buy"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/buyBtn"
+
+            />
+
+    </LinearLayout>
+</LinearLayout>

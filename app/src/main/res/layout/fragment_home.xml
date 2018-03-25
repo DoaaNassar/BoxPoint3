@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.example.duaa.boxpoint.Fragment.HomeFragment"
+    tools:ignore="RtlCompat">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp">
+
+                <FrameLayout
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        app:srcCompat="@drawable/logo"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:src="@drawable/box_logo" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:src="@drawable/point_logo" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:id="@+id/countryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center_vertical|start"
+                    android:text="الكويت"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/listBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/down"
+
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/search"
+
+
+                    />
+
+
+                <ImageView
+                    android:id="@+id/notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    app:srcCompat="@drawable/notifications"
+
+                    />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.example.duaa.boxpoint.view.CustomTabLayout
+        android:id="@+id/mTabLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="@color/colorPrimary"
+        app:tl_indicator_width="40dp"
+        app:tl_textBold="SELECT"
+        app:tl_textSelectColor="@color/silverS"
+        app:tl_textUnselectColor="@color/Silver"
+        app:tl_textsize="14sp" />
+
+    <FrameLayout
+        android:id="@+id/frameContainerr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <com.example.duaa.boxpoint.view.FontButtonRegular
+        android:id="@+id/buyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="@string/buy"
+        android:textSize="15sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

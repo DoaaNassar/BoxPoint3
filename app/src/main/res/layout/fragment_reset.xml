@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:ignore="RtlCompat"
+    android:background="@color/white"
+    tools:context="com.example.duaa.boxpoint.Fragment.ResetFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp">
+
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/changePassword"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="5dp"
+                    app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+
+                     />
+            </LinearLayout>
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/background_textview"
+        android:hint="@string/email"
+        android:padding="12dp"
+        android:textSize="13sp"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+
+    <com.example.duaa.boxpoint.view.FontButtonRegular
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        />
+
+</LinearLayout>

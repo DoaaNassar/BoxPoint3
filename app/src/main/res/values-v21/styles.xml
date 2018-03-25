@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="tab_text">tab_text</style>
+
+
+    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">@string/please_wait</item>
+        <item name="DialogSpotColor">@color/colorPrimary</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+    <style name="CustomLogout" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">@string/Logout</item>
+        <item name="DialogSpotColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/silverS</item>
+        <item name="android:background">@color/white</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+
+</resources>

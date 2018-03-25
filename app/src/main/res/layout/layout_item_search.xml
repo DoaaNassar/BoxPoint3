@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="RtlCompat">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/colorAccent" />
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.example.duaa.boxpoint.view.FontTextViewRegular
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="بيتزا"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+
+
+            <com.example.duaa.boxpoint.view.FontTextViewRegular
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="10"
+                android:text="مثال لنص يمكن ان يستبدل"
+                android:textSize="13sp"
+
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
+            app:srcCompat="@drawable/left"
+
+
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/style"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80FFFFFF"
+        >
+
+    </ImageView>
+</FrameLayout>

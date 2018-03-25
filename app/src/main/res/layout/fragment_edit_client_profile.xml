@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:ignore="RtlCompat">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+
+                    <com.example.duaa.boxpoint.view.FontTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/editPersonalProfile"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        app:srcCompat="@drawable/ic_notifications_black_24dp"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="5dp"
+                        app:srcCompat="@drawable/ic_keyboard_backspace_black_24dp"
+
+                        />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                tools:context="com.example.duaa.boxpoint.Fragment.AddClientFragment">
+
+
+                <com.example.duaa.boxpoint.view.FontTextViewRegular
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableStart="@drawable/user_new"
+                    android:text="@string/editProfileClient"
+                    android:textColor="@color/silverS"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_textview"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:text="معتصم محمد"
+                    android:textColor="@color/Silver"
+
+                    android:textSize="13sp"
+
+
+                    />
+
+                <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_textview"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:text="محمد"
+                    android:textColor="@color/Silver"
+                    android:textSize="13sp"
+
+
+                    />
+
+
+                <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_textview"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:text="معتصم "
+                    android:textColor="@color/Silver"
+                    android:textSize="13sp"
+
+
+                    />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/background_textview"
+                        android:enabled="false"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:text="******"
+                        android:textColor="@color/Silver"
+                        android:textSize="13sp"
+
+
+                        />
+
+                    <com.example.duaa.boxpoint.view.FontTextViewRegular
+                        android:id="@+id/changePassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:padding="5dp"
+                        android:text="@string/change"
+                        android:textColor="@color/textColor"
+
+                        />
+
+                </FrameLayout>
+
+
+                <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_textview"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:text="example@gmail.com"
+                    android:textColor="@color/Silver"
+                    android:textSize="13sp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.example.duaa.boxpoint.view.FontTextViewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="5dp"
+                        android:drawableStart="@drawable/location"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:text="الاحمدي . الكويت"
+                        android:textColor="@color/black"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/background_textview"
+                        android:enabled="false"
+                        android:padding="12dp"
+                        android:paddingEnd="90dp"
+                        android:text="@string/clientImage"
+                        android:textColor="@color/Silver"
+                        android:textSize="13sp"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/uploadImage"
+                        android:layout_width="80dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/background_button"
+                        android:padding="5dp"
+                        android:src="@drawable/upload" />
+
+                </FrameLayout>
+
+                <com.example.duaa.boxpoint.view.FontEditTextViewRegular
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/background_textview"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:text="95451566"
+                    android:textColor="@color/Silver"
+                    android:textSize="13sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp">
+
+                    <com.example.duaa.boxpoint.view.FontButtonRegular
+                        android:id="@+id/backData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_discount"
+                        android:text="@string/back"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <com.example.duaa.boxpoint.view.FontButtonRegular
+                        android:id="@+id/saveUpdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button"
+                        android:text="@string/save"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A0000000"
+        android:id="@+id/loadingLayout"
+        android:visibility="gone"
+
+        >
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi"
+            style="@style/AVLoadingIndicatorView.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            app:indicatorColor="@color/textColor"
+            app:indicatorName="BallClipRotatePulseIndicator"
+
+
+            />
+    </FrameLayout>
+</FrameLayout>
