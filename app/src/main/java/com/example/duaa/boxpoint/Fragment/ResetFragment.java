@@ -60,17 +60,9 @@ public class ResetFragment extends android.app.Fragment {
             public void onResponse(Object result) {
                 ResponseObject responseObject = (ResponseObject) result;
                 if(responseObject.isStatus()){
-//                    Alerter.create(ForgetPasswordActivity.this)
-//                            .setText(responseObject.getMessage())
-//                            .hideIcon()
-//                            .setBackgroundColorRes(R.color.colorPrimary)
-//                            .show();
+//
                 }else {
-//                    Alerter.create(ForgetPasswordActivity.this)
-//                            .setText("البريد الالكتروني خاطئ")
-//                            .hideIcon()
-//                            .setBackgroundColorRes(R.color.colorPrimary)
-//                            .show();
+//
                 }
 
             }
@@ -78,30 +70,21 @@ public class ResetFragment extends android.app.Fragment {
             @Override
             public void onFailure(Object result) {
                 if (result != null) {
-//                    ResponseError responseError = (ResponseError) result;
-//                    Alerter.create(ForgetPasswordActivity.this)
-//                            .setText(responseError.getMessage())
-//                            .hideIcon()
-//                            .setBackgroundColorRes(R.color.colorPrimary)
-//                            .show();
+//
                 }
             }
 
             @Override
             public void onFinish() {
-//                dialog.hide();
-//                send_button.setEnabled(true);
+//
             }
 
             @Override
             public void OnError(String message) {
-//                Alerter.create(ForgetPasswordActivity.this)
-//                        .setText(message)
-//                        .hideIcon()
-//                        .setBackgroundColorRes(R.color.colorPrimary)
-//                        .show();
             }
         });
     }
+
+
 
 }

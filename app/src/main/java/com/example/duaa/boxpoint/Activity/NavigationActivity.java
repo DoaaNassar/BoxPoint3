@@ -70,11 +70,10 @@ public class NavigationActivity extends AppCompatActivity
                 setData();
                 invalidateOptionsMenu(); // creates call to
             }
-
-
         };
 
         drawer.addDrawerListener(toggle);
+        drawer.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 //        toggle.syncState();
 
         Fragment con = new HomeFragment();
@@ -197,7 +196,7 @@ public class NavigationActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+//        int id = item.getItemId();
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -301,6 +300,8 @@ public class NavigationActivity extends AppCompatActivity
 
     public void Logout(final String token) {
         dialog.show();
+        dialog.setCancelable(false);
+
         new UserAPI().Logout(token , new UniversalCallBack() {
             @Override
             public void onResponse(Object result) {

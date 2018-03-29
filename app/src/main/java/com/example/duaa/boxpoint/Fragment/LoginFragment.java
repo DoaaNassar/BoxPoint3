@@ -137,6 +137,7 @@ public class LoginFragment extends android.app.Fragment {
 
     public void Login(final String Email, final String Password) {
         dialog.show();
+//        dialog.setCancelable(false);
         new UserAPI().Login(Email, Password, new UniversalCallBack() {
             @Override
             public void onResponse(Object result) {
@@ -153,6 +154,7 @@ public class LoginFragment extends android.app.Fragment {
             public void onFailure(Object result) {
                 if (result != null) {
                     ResponseError responseError = (ResponseError) result;
+                    dialog.hide();
 //                    Alerter.create(LoginActivity.this)
 //                            .setText(responseError.getMessage())
 //                            .hideIcon()
@@ -163,11 +165,14 @@ public class LoginFragment extends android.app.Fragment {
 
             @Override
             public void onFinish() {
+//                dialog.hide();
 
             }
 
             @Override
             public void OnError(String message) {
+                dialog.hide();
+
 //                Alerter.create(LoginActivity.this)
 //                        .setText(message)
 //                        .hideIcon()
@@ -243,15 +248,17 @@ public class LoginFragment extends android.app.Fragment {
 
             @Override
             public void onFailure(Object result) {
-
+                dialog.hide();
             }
 
             @Override
             public void onFinish() {
+                dialog.hide();
             }
 
             @Override
             public void OnError(String message) {
+                dialog.hide();
 
             }
         });

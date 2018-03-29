@@ -44,6 +44,8 @@ public class AboutFragment extends android.app.Fragment {
         } else {
             arabicBox.setVisibility(View.GONE);
             englishBox.setVisibility(View.VISIBLE);
+            back.setRotation(180);
+
         }
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -86,7 +88,6 @@ public class AboutFragment extends android.app.Fragment {
 
                     android.app.Fragment homeFragment = new HomeFragment();
                     FragmentManager fm = getFragmentManager();
-
                     FragmentTransaction fragmentTransaction = fm.beginTransaction();
                     fragmentTransaction.replace(R.id.frameContainer, homeFragment).commit();
 
@@ -98,10 +99,6 @@ public class AboutFragment extends android.app.Fragment {
             }
         });
     }
-
-
-
-
 
 
 }

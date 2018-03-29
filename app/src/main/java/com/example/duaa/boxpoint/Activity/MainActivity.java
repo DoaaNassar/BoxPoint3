@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
 
         bindView();
 
-        Intent intent = new Intent(MainActivity.this ,NavigationActivity.class);
         if (!TextUtils.isEmpty(ApplicationController.getInstance().token())){
-            MainActivity.this.finish();
-            startActivity(intent);
-//            languageNa(languageToLoad);
+
+            languageNa(prefs.getString("languageSS",""));
+            Intent refresh = new Intent(this, NavigationActivity.class);
+            startActivity(refresh);
 
 
         }
@@ -154,6 +154,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public  void  languageNa(String languageToLoad){
 
+        ApplicationController.getInstance().changeLang(languageToLoad);
+        ApplicationController.getInstance().loadLocale();
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+
+        Intent refresh = new Intent(this, MainActivity.class);
+        startActivity(refresh);
+        this.finish();
+
+    }
 
 }

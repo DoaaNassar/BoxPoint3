@@ -4,7 +4,6 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,7 +91,7 @@ public class EditProfileClientFragment extends android.app.Fragment {
                 saveUpdate.setEnabled(false);
                 loadingLayout.setVisibility(View.VISIBLE);
 
-                if (ValidationClientSignup()){
+                if (ValidationClient()){
                     UpdateUser(userNameText,firstNameText,lastNameText,emailText,phoneText,
                             ApplicationController.getInstance().token());
                 } else {
@@ -281,7 +280,7 @@ public class EditProfileClientFragment extends android.app.Fragment {
         });
     }
 
-    public boolean ValidationClientSignup() {
+    public boolean ValidationClient() {
 
 
         if (TextUtils.isEmpty(firstName.getText().toString())) {
